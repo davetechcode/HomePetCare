@@ -1,0 +1,9 @@
+C:\VeterinariaDomicilio\HomePetCare.App\HomePetCare.App.Dominio\bin\Debug\netstandard2.0\HomePetCare.App.Dominio.deps.json
+C:\VeterinariaDomicilio\HomePetCare.App\HomePetCare.App.Dominio\bin\Debug\netstandard2.0\HomePetCare.App.Dominio.dll
+C:\VeterinariaDomicilio\HomePetCare.App\HomePetCare.App.Dominio\bin\Debug\netstandard2.0\HomePetCare.App.Dominio.pdb
+C:\VeterinariaDomicilio\HomePetCare.App\HomePetCare.App.Dominio\obj\Debug\netstandard2.0\HomePetCare.App.Dominio.csprojAssemblyReference.cache
+C:\VeterinariaDomicilio\HomePetCare.App\HomePetCare.App.Dominio\obj\Debug\netstandard2.0\HomePetCare.App.Dominio.AssemblyInfoInputs.cache
+C:\VeterinariaDomicilio\HomePetCare.App\HomePetCare.App.Dominio\obj\Debug\netstandard2.0\HomePetCare.App.Dominio.AssemblyInfo.cs
+C:\VeterinariaDomicilio\HomePetCare.App\HomePetCare.App.Dominio\obj\Debug\netstandard2.0\HomePetCare.App.Dominio.csproj.CoreCompileInputs.cache
+C:\VeterinariaDomicilio\HomePetCare.App\HomePetCare.App.Dominio\obj\Debug\netstandard2.0\HomePetCare.App.Dominio.dll
+C:\VeterinariaDomicilio\HomePetCare.App\HomePetCare.App.Dominio\obj\Debug\netstandard2.0\HomePetCare.App.Dominio.pdb
