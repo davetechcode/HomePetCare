@@ -1,0 +1,30 @@
+﻿@page
+@model HomePetCare.App.Frontend.Pages.MascotaModel
+@{
+    ViewData["Title"] = "Mascotas";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="form">
+    <form action="" id="patient-form" class="form">
+        <label for="codigo-msct" id="codigo-msct">Código:</label>
+        <input type="text" placeholder="Escribe el código." name="codigo-msct">
+        <label for="propietario-label" id="propietario-label">Propietario:</label>
+        <input type="text" placeholder="Nombre del propietario." name="propietario-label">
+        <label for="nombre-label" id="nombre-label">Nombre:</label>
+        <input type="text" placeholder="Nombre de la mascota." name="nombre-label">
+        <br>
+        <label for="codigo-visita" id="codigo-visita">Código de la visita:</label>
+        <input type="text" placeholder="Escribe el código." name="codigo-visita">
+        <label for="codigo-vet" id="codigo-vet">Código del veterinario:</label>
+        <input type="text" placeholder="Escribe el código." name="codigo-vet">
+        <label for="fecha-visita" id="fecha-visita">Fecha de la visita:</label>
+        <input type="date" placeholder="Nombre de la mascota." name="fecha-visita">
+        <br>
+        <div class="button">
+            <input type="submit" value="Crear" id="crear">
+            <input type="submit" value="Buscar" id="buscar">
+            <input type="submit" value="Editar" id="editar">
+            <input type="submit" value="Borrar" id="borrar">
+        </div>
+    </form>
+</div>

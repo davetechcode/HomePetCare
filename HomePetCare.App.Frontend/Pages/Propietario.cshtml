@@ -1,0 +1,20 @@
+﻿@page
+@model HomePetCare.App.Frontend.Pages.PropietarioModel
+@{
+    ViewData["Title"] = "Propietario";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="form">
+    <form action="" id="owner-form">
+        <label for="codigo-propietario" id="codigo-propietario">Código Propietario:</label>
+        <input type="text" placeholder="Escribe el código." name="codigo-propietario">
+        <label for="codigo-msct" id="codigo-msct">Código de la mascota:</label>
+        <input type="text" placeholder="Escribe el código." name="codigo-msct">
+        <div class="button">
+            <input type="submit" value="Crear" id="crear">
+            <input type="submit" value="Buscar" id="buscar">
+            <input type="submit" value="Editar" id="editar">
+            <input type="submit" value="Borrar" id="borrar">
+        </div>
+    </form>
+</div>

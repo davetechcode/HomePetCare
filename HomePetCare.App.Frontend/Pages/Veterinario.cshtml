@@ -1,0 +1,20 @@
+﻿@page
+@model HomePetCare.App.Frontend.Pages.VeterinarioModel
+@{
+    ViewData["Title"] = "Veterinario";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="form">
+    <form action="" id="veterinary-form">
+        <label for="codigo-vet" id="codigo-vet">Código veterinario:</label>
+        <input type="text" placeholder="Escribe el código." name="codigo-vet">
+        <label for="tarjeta-vet" id="tarjeta-vet">Tarjeta Profesional:</label>
+        <input type="text" placeholder="Número de la tarjeta profesional." name="tarjeta-vet">
+        <div class="button">
+            <input type="submit" value="Crear" id="crear">
+            <input type="submit" value="Buscar" id="buscar">
+            <input type="submit" value="Editar" id="editar">
+            <input type="submit" value="Borrar" id="borrar">
+        </div>
+    </form>
+</div>

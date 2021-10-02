@@ -1,0 +1,130 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+:root{
+  --main-green: #72bb53;
+  --main-blue: #1464f6;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+  
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem var(--main-blue);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/*.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.form{  
+  width: 450px;
+  height: 100vh;
+}
+
+.button{  
+  margin-top: 5px;
+}
+
+.index-top{
+  height: 500px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar{
+  background-color: var(--main-blue);
+}
+
+/*:root{
+  --main-green: #72bb53;
+  --main-blue: #1464f6;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html{
+  font-size: 60%;
+}
+
+body{
+  font-size: 1.8rem;  
+}
+
+a, a:visited{
+  text-decoration: none;
+}
+
+a:active, a:hover{
+  color: var(--main-blue);
+}*/
