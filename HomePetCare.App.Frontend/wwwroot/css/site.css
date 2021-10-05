@@ -76,19 +76,63 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
-/*.container{
+.nav-link:active, .nav-link:hover{
+  color: var(--main-blue);
+  border-bottom: 1px solid var(--main-blue);
+}
+
+.title-mascotas{
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.form{
+  margin: 5px 0px 5px 0px;
+}
+
+.top-form{
+  border-bottom: 1px solid black;
+  margin: 5px 0px 30px 0px;
+  padding-bottom: 15px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*.hero-form{
+  padding: 5px 0px;
+  margin: 5px 0px;
+  display: flex;
+  justify-content: space-around;
 }*/
 
-.form{  
-  width: 450px;
-  height: 100vh;
+label{
+  padding: 5px 0;
+  margin: 5px 10px 5px 0;
+}
+
+.bottom-form{
+  margin: 5px 0px 10px 0px;  
+}
+
+#observaciones{
+  resize: none;
+  width: 100%;  
+  padding: 0.3em;
+  outline: none;
+  overflow: auto;
 }
 
 .button{  
-  margin-top: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-crud{  
+  padding: 0px 25px 0px 25px;
+  margin: 10px 15px 0px 15px;
 }
 
 .index-top{
@@ -101,6 +145,12 @@ body {
 
 #navbar{
   background-color: var(--main-blue);
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*:root{

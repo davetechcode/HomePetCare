@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\codersTeam5\\HomePetCare.App.Frontend\\HomePetCare.App.Frontend.csproj": {}
+    "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\HomePetCare.App.Frontend\\HomePetCare.App.Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\codersTeam5\\HomePetCare.App.Frontend\\HomePetCare.App.Frontend.csproj": {
+    "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\HomePetCare.App.Frontend\\HomePetCare.App.Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\codersTeam5\\HomePetCare.App.Frontend\\HomePetCare.App.Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\HomePetCare.App.Frontend\\HomePetCare.App.Frontend.csproj",
         "projectName": "HomePetCare.App.Frontend",
-        "projectPath": "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\codersTeam5\\HomePetCare.App.Frontend\\HomePetCare.App.Frontend.csproj",
+        "projectPath": "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\HomePetCare.App.Frontend\\HomePetCare.App.Frontend.csproj",
         "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\codersTeam5\\HomePetCare.App.Frontend\\obj\\",
+        "outputPath": "C:\\Users\\Juan\\Documents\\Juan\\Developer\\Cursos\\MisionTIC\\Ciclo 3\\FdP\\Proyecto\\HomePetCare\\HomePetCare.App.Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juan\\AppData\\Roaming\\NuGet\\NuGet.Config"
