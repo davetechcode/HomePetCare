@@ -1,0 +1,40 @@
+﻿@page
+@model HomePetCare.App.Frontend.Pages.VeterinarioModel
+@{
+    ViewData["Title"] = "Veterinario";
+}
+<h1 class="title-mascotas">@ViewData["Title"]</h1>
+<div class="form">
+    <form action="" id="veterinary-form">
+        <div class="top-form">
+            <label for="codigo-vet" id="codigo-vet">Código del veterinario:
+            <input type="number" placeholder="Escribe el código." name="codigo-vet" min="1" max="100000"></label>
+            <label for="tarjeta-prof" id="tarjeta-prof">Tarjeta profesional:
+            <input type="text" placeholder="Tarjeta profesional." name="tarjeta-prof"></label>
+        </div>
+        <div class="bottom-form">
+            <div class="hero-form">
+                <label for="id-vet" id="id-vet">Identificación:
+                <input type="number" name="id-vet" min="1" max="9999999999"></label>
+                <label for="nombre-vet" id="nombre-vet">Nombre:
+                <input type="text" placeholder="Escribe el nombre." name="nombre-vet"></label>
+                <label for="apellido-vet" id="apellido-vet">Apellido:
+                <input type="text" placeholder="Escribe el apellido." name="apellido-vet"></label>
+            </div>
+            <div class="hero-form">
+                <label for="direccion-vet" id="direccion-vet">Dirección:
+                <input type="text" placeholder="Dirección." name="direccion-vet"></label>
+                <label for="telefono-vet" id="telefono-vet">Teléfono:
+                <input type="text" placeholder="Teléfono." name="telefono-vet"></label>
+            </div>
+            <label for="observaciones" id="observaciones">Observaciones:</label>
+            <textarea name="observaciones" id="observaciones"></textarea>
+        </div>
+        <div class="button">
+            <input type="submit" value="Crear" id="crear">
+            <input type="submit" value="Buscar" id="buscar">
+            <input type="submit" value="Editar" id="editar">
+            <input type="submit" value="Borrar" id="borrar">
+        </div>
+    </form>
+</div>
