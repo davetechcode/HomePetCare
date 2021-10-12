@@ -16,7 +16,7 @@ namespace HomePetCare.App.Persistencia
         /// <param name="appContext"></param>//
         public RepositorioPropietario(AppContext appContext)
         {//
-            _appContext = appContext; // 
+            _appContext = appContext; 
         }
         Propietario IRepositorioPropietario.AddPropietario(Propietario propietario)
         {
