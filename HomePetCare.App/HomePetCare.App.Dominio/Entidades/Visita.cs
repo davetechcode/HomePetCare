@@ -4,7 +4,7 @@ namespace HomePetCare.App.Dominio
 {
     public class Visita
     {
-        public int IDVisita { get; set; }
+        public int VisitaId { get; set; }
         public float Temperatura { get; set;}
         public string Peso { get; set; }
         public string FrecuenciaRespiratoria { get; set;}
@@ -13,7 +13,7 @@ namespace HomePetCare.App.Dominio
         public DateTime FechaVisita { get; set; }
         public string Raza { get; set; }
         public Genero Genero { set; get; }
-       // public int IdMascota { get; set;}
-       // public int IdVeterinario { get; set; } 
+        public int MascotaId { get; set;}
+        public int VeterinarioId { get; set; } 
     }
 }

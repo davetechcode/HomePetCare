@@ -2,7 +2,7 @@ namespace HomePetCare.App.Dominio
 {
     public enum Genero
     {
-        macho,
-        hembra,
+        Macho,
+        Hembra,
     }
 }
