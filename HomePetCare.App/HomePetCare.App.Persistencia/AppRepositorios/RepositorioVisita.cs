@@ -61,7 +61,7 @@ namespace HomePetCare.App.Persistencia
                 visitaEncontrada.MascotaId = visita.MascotaId;
                 visitaEncontrada.VeterinarioId = visita.VeterinarioId;
 
-                _appContext.SaveChanges();
+                _appContext.SaveChanges(); 
             }
             return visitaEncontrada;
 
