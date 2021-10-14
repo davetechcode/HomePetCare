@@ -78,3 +78,5 @@ C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\Hom
 C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App.Frontend\obj\Debug\netcoreapp3.1\HomePetCare.App.Frontend.pdb
 C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App.Frontend\obj\Debug\netcoreapp3.1\HomePetCare.App.Frontend.genruntimeconfig.cache
 C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App.Frontend\obj\Debug\netcoreapp3.1\HomePetCare.App.Frontend.csproj.CopyComplete
+C:\HomePetCare\HomePetCare.App\HomePetCare.App.Frontend\obj\Debug\netcoreapp3.1\HomePetCare.App.Frontend.dll
+C:\HomePetCare\HomePetCare.App\HomePetCare.App.Frontend\obj\Debug\netcoreapp3.1\HomePetCare.App.Frontend.pdb
