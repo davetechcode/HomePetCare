@@ -1,0 +1,18 @@
+﻿@page
+@model HomePetCare.App.Presentacion.Pages.DetailsModel
+@{
+    <!--Los detalles de la mascota van de acuerdo a lo que hay en la capa de dominio-->
+
+}
+<h2>Datos detallados de la mascota.</h2>
+<div>
+    MascotaId: @Model.Mascota.MascotaId
+</div>
+<div>
+    Nombre: @Model.Mascota.Nombre
+</div>
+<div>
+    PropietarioId: @Model.Mascota.PropietarioId
+</div>
+
+<a asp-page="./List" class="btn-default">Volver a la lista de los clientes.</a>

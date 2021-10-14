@@ -1,0 +1,7 @@
+C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App\HomePetCare.App.Presentacion\obj\Debug\netcoreapp3.1\HomePetCare.App.Presentacion.csprojAssemblyReference.cache
+C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App\HomePetCare.App.Presentacion\obj\Debug\netcoreapp3.1\HomePetCare.App.Presentacion.AssemblyInfoInputs.cache
+C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App\HomePetCare.App.Presentacion\obj\Debug\netcoreapp3.1\HomePetCare.App.Presentacion.AssemblyInfo.cs
+C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App\HomePetCare.App.Presentacion\obj\Debug\netcoreapp3.1\HomePetCare.App.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App\HomePetCare.App.Presentacion\obj\Debug\netcoreapp3.1\HomePetCare.App.Presentacion.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App\HomePetCare.App.Presentacion\obj\Debug\netcoreapp3.1\HomePetCare.App.Presentacion.RazorAssemblyInfo.cache
+C:\Users\Juan\Documents\Juan\Developer\Cursos\MisionTIC\Ciclo 3\FdP\Proyecto\HomePetCare\HomePetCare.App\HomePetCare.App.Presentacion\obj\Debug\netcoreapp3.1\HomePetCare.App.Presentacion.RazorAssemblyInfo.cs
