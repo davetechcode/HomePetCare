@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using HomePetCare.App.Dominio;
 
+
 namespace HomePetCare.App.Persistencia
 {
     public class AppContext : DbContext 
