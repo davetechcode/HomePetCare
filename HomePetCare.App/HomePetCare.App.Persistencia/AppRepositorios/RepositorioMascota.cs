@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using HomePetCare.App.Dominio;
+using RazorPagesMascotas.Models;
 
 
 namespace HomePetCare.App.Persistencia
@@ -30,7 +30,7 @@ namespace HomePetCare.App.Persistencia
 
         void IRepositorioMascota.DeleteMascota(int MascotaId)
         {
-            var mascotaEncontrada = _appContext.Mascotas.FirstOrDefault(m => m.MascotaId == MascotaId);
+            var mascotaEncontrada = _appContext.Mascotas.FirstOrDefault(m => m.MascotaId== MascotaId);
             if (mascotaEncontrada == null)
                 return;
             _appContext.Mascotas.Remove(mascotaEncontrada);
@@ -53,21 +53,13 @@ namespace HomePetCare.App.Persistencia
             if (mascotaEncontrada != null)
             {
                 mascotaEncontrada.Nombre = mascota.Nombre;
-                mascotaEncontrada.PropietarioId = mascota.PropietarioId;
+                mascotaEncontrada.Propietario  = mascota.Propietario ;
 
                 _appContext.SaveChanges();
-                
 
             }
             return mascotaEncontrada;
         }
-
-
-
-
-
-
-
 
 
     }

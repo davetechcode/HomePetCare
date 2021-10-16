@@ -1,12 +1,14 @@
 using System;
+using System.Collections.Generic;
 
-namespace HomePetCare.App.Dominio
+namespace RazorPagesMascotas.Models
 {
     public class Mascota
     {
     public int MascotaId { get; set; }
     public string Nombre { get; set; }
-    public int PropietarioId { get; set; }
-    
+
+    public Propietario Propietario { get; set; }
+
     }
 }

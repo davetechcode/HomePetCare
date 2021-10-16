@@ -1,40 +1,35 @@
 ﻿@page
-@model HomePetCare.App.Frontend.Pages.PropietarioModel
+@using RazorPagesMascotas.Models @*namespace*@
+@model RazorPagesPropietario.Pages.PropietarioModel
 @{
-    ViewData["Title"] = "Propietario";
+    ViewData["Title"] = "Edicion Propietario";
 }
 <h1 class="title-mascotas">@ViewData["Title"]</h1>
 <div class="form">
-    <form action="" id="owner-form">
-        <div class="top-form">
-            <label for="codigo-propietario" id="codigo-propietario">Código del propietario:
-            <input type="number" placeholder="Escribe el código." name="codigo-propietario" min="1" max="100000"></label>
-            <label for="codigo-msct" id="codigo-msct">Código de la mascota:
-            <input type="number" placeholder="Código de la mascota." name="codigo-msct" min="1" max="100000"></label>
-        </div>
-        <div class="bottom-form">
-            <div class="hero-form">
-                <label for="id-propietario" id="id-propietario">Identificación:
-                <input type="number" name="id-propietario" min="1" max="9999999999"></label>
-                <label for="nombre-propietario" id="nombre-propietario">Nombre:
-                <input type="text" placeholder="Escribe el nombre." name="nombre-propietario"></label>
-                <label for="apellido-propietario" id="apellido-propietario">Apellido:
-                <input type="text" placeholder="Escribe el apellido." name="apellido-propietario"></label>
-            </div>
-            <div class="hero-form">
-                <label for="direccion-propietario" id="direccion-propietario">Dirección:
-                <input type="text" placeholder="Dirección." name="direccion-propietario"></label>
-                <label for="telefono-propietario" id="telefono-propietario">Teléfono:
-                <input type="text" placeholder="Teléfono." name="telefono-propietario"></label>
-            </div>
-            <label for="observaciones" id="observaciones">Observaciones:</label>
-            <textarea name="observaciones" id="observaciones"></textarea>
-        </div>
+    <form method="post">
+        <div class="row">
+            <div class="bottom-form">
+                <div class="hero-form">
+                     <input type="hidden" asp-for="EntidadPropietario.PropietarioId" placeholder="Nro Identificacion"/>
+                     
+                    <label asp-for="EntidadPropietario.Identificacion">Identificación:
+                        <input asp-for="EntidadPropietario.Identificacion" placeholder="Nro Identificacion"></label>
+                    <label asp-for="EntidadPropietario.Nombre">Nombre:
+                        <input asp-for="EntidadPropietario.Nombre" placeholder="Escribe el nombre."></label>
+                    <label asp-for="EntidadPropietario.Apellidos">Apellido:
+                        <input placeholder="Escribe el apellido." asp-for="EntidadPropietario.Apellidos"></label>
+                </div>
+                <div class="hero-form">
+                    <label asp-for="EntidadPropietario.Direccion">Dirección:
+                        <input asp-for="EntidadPropietario.Direccion"></label>
+                    <label asp-for="EntidadPropietario.Telefono">Teléfono:
+                        <input asp-for="EntidadPropietario.Telefono"></label>
+                </div>
+            </div>        
+         <div class="top-form">
+         </div>
         <div class="button">
-            <input type="submit" value="Crear" id="crear">
-            <input type="submit" value="Buscar" id="buscar">
-            <input type="submit" value="Editar" id="editar">
-            <input type="submit" value="Borrar" id="borrar">
+            <input type="submit" value="Editar">
         </div>
     </form>
 </div>

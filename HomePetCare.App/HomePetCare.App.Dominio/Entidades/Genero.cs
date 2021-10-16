@@ -1,4 +1,4 @@
-namespace HomePetCare.App.Dominio
+namespace RazorPagesMascotas.Models
 {
     public enum Genero
     {

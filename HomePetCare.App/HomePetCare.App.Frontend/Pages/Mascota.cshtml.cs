@@ -4,23 +4,52 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using HomePetCare.App.Dominio;
+using RazorPagesMascotas.Models;
 using HomePetCare.App.Persistencia;
 
-namespace HomePetCare.App.Frontend.Pages
+namespace RazorPagesMascotas.Pages
 {
     public class MascotaModel : PageModel
     {
     private readonly IRepositorioMascota repositorioMascota;
-    public IEnumerable<Mascota> Mascota {set; get;}
-    public ListModel()
-    {
+     private readonly IRepositorioPropietario repositorioPropietario;
+    public IEnumerable<Propietario> Mascota {set; get;}
+
+    [BindProperty]
+        public Mascota EntidadMascota {set; get;}
+
+         [BindProperty]
+        public Propietario  EntidadPropietario  {set; get;}
+        
+    public MascotaModel()
+
+    {  
         this.repositorioMascota = new RepositorioMascota(new HomePetCare.App.Persistencia.AppContext());
+        this.repositorioPropietario = new RepositorioPropietario(new HomePetCare.App.Persistencia.AppContext());
     }
 
-        public void OnGet(/*string filtroBusqueda*/)
+        public void OnGet(string filtroBusqueda)
         {
-           // Mascotas = respositorioMascota.GetAllMascotas();
+            Mascota = repositorioPropietario.GetAllPropietarios();
+
+        }
+
+public  Mascota getUniqueMascota(int idMascota)
+{
+  return repositorioMascota.GetMascota( idMascota);
+   }  
+
+        public ActionResult  OnPost()
+        {
+         EntidadMascota =  repositorioMascota.AddMascota(EntidadMascota);
+
+         EntidadPropietario.MascotaId=   EntidadMascota.MascotaId;
+
+         Console.WriteLine("capturing new id from dataBase "+ EntidadMascota.MascotaId);
+
+         repositorioPropietario.AddPropietario(EntidadPropietario);
+
+           return RedirectToPage("Mascota");
         }
     }
 }

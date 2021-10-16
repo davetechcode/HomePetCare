@@ -1,59 +1,77 @@
 ﻿@page
-@model HomePetCare.App.Frontend.Pages.MascotaModel
+@using RazorPagesMascotas.Models @*namespace*@
+@model RazorPagesMascotas.Pages.MascotaModel
 @{
-    ViewData["Title"] = "Mascotas";
+    ViewData["Title"] = "Registro Propietario";
+    ViewData["Title2"] = "Nombre de la Mascota";
+
 }
 <h1 class="title-mascotas">@ViewData["Title"]</h1>
+<div class="top-form"></div>
 <div class="form">
-    <form action="" id="patient-form" class="form">
-        <div class="top-form">
-            <label for="codigo-msct" id="codigo-msct">Código:
-            <input type="number" placeholder="Escribe el código." name="codigo-msct" min="1" max="100000"></label>
-            <label for="propietario-label" id="propietario-label">Propietario:
-            <input type="text" placeholder="Nombre del propietario." name="propietario-label"></label>
-            <label for="nombre-label" id="nombre-label">Nombre:
-            <input type="text" placeholder="Nombre de la mascota." name="nombre-label"></label>
+    <form method="post">
+        <div class="row">
+            <div class="bottom-form">
+                <div class="hero-form">
+                    <label asp-for="EntidadPropietario.Identificacion">Identificación:
+                        <input asp-for="EntidadPropietario.Identificacion" placeholder="Nro Identificacion"></label>
+                    <label asp-for="EntidadPropietario.Nombre">Nombre:
+                        <input asp-for="EntidadPropietario.Nombre" placeholder="Escribe el nombre."></label>
+                    <label asp-for="EntidadPropietario.Apellidos">Apellido:
+                        <input placeholder="Escribe el apellido." asp-for="EntidadPropietario.Apellidos"></label>
+                </div>
+                <div class="hero-form">
+                    <label asp-for="EntidadPropietario.Direccion">Dirección:
+                        <input asp-for="EntidadPropietario.Direccion"></label>
+                    <label asp-for="EntidadPropietario.Telefono">Teléfono:
+                        <input asp-for="EntidadPropietario.Telefono"></label>
+                </div>
+            </div>
+
+            <h1 class="title-mascotas">@ViewData["Title2"]</h1>
+            <div class="col-md-4">
+                <label asp-for="EntidadMascota.Nombre"></label>
+                <input asp-for="EntidadMascota.Nombre" class="form-control" />
+                <span class="alert-danger" asp-validation-for="EntidadMascota.Nombre"></span>
+            </div>
         </div>
-        <div class="bottom-form">
-            <div class="hero-form">
-                <label for="codigo-visita" id="codigo-visita">Código de la visita:
-                <input type="number" placeholder="Escribe el código." name="codigo-visita" min="1" max="100000"></label>
-                <label for="codigo-vet" id="codigo-vet">Código del veterinario:
-                <input type="number" placeholder="Escribe el código." name="codigo-vet" min="1" max="100000"></label>
+        <div>
+            <div class="top-form">
             </div>
-            <div class="hero-form">
-                <label for="fecha-visita" id="fecha-visita">Fecha de la visita:
-                <input type="date" placeholder="Nombre de la mascota." name="fecha-visita"></label>
-                <label for="temperatura" id="temperatura">Temperatura:
-                <input type="text" placeholder="Temperatura." name="temperatura"></label>
-                <label for="peso" id="peso">Peso:
-                <input type="number" placeholder="Peso en gramos." name="peso" min="1" max="100000"></label>
-            </div>
-            <div class="hero-form">
-                <label for="fr-cardiaca" id="fr-cardiaca">Frecuencia Cardiaca:
-                <input type="text" placeholder="Frecuencia Cardiaca." name="fr-cardiaca"></label>
-                <label for="fr-respiratoria" id="fr-respiratoria">Frecuencia Respiratoria:
-                <input type="text" placeholder="Frecuencia Respiratoria." name="fr-respiratoria"></label>
-                <label for="raza" id="raza">Raza:
-                <input type="text" placeholder="Raza." name="raza"></label>
-            </div>
-            <div class="hero-for">
-                <label for="estado-animo" id="estado-animo">Estado de ánimo:
-                <input type="text" placeholder="Estado de ánimo." name="estado-animo"></label>
-                <label for="genero" id="genero">Género:
-                <input type="radio" name="genero" id="macho" value="macho">
-                <label for="macho">Macho</label>
-                <input type="radio" name="genero" id="hembra" value="hembra">
-                <label for="hembra">Hembra</label>
-            </div>
-            <label for="observaciones" id="observaciones">Observaciones:</label>
-            <textarea name="observaciones" id="observaciones"></textarea>
-        </div>
-        <div class="button">
-            <input type="submit" value="Crear" id="crear" class="btn-crud">
-            <input type="submit" value="Buscar" id="buscar" class="btn-crud">
-            <input type="submit" value="Editar" id="editar" class="btn-crud">
-            <input type="submit" value="Borrar" id="borrar" class="btn-crud">
+            <input type="submit" value="Guardar" class="btn btn-primary" />
         </div>
     </form>
 </div>
+<table class="table">
+    <th>Lista de Registros</th>
+    <tr>
+        <td>Nombre Mascota</td>
+        <td>Propietario: Identificacion</td>
+        <td>Propietario-Nombre</td>
+        <td>Propietario-Apellido</td>
+        <td>Direccion</td>
+        <td>Telefono</td>
+        <td>Funcion</td>
+        <td>Funcion</td>
+    </tr>
+
+    @foreach (var p in Model.Mascota)
+    {
+        var m = @Model.getUniqueMascota(p.MascotaId);
+        <tr>
+            <td>@m.Nombre</td>
+            <td>@p.Identificacion</td>
+            <td>@p.Nombre</td>
+            <td>@p.Apellidos</td>
+            <td>@p.Direccion</td>
+            <td>@p.Telefono</td>
+            <td><a class="btn btn-primary table-btn" asp-page="./Propietario" asp-route-propietarioId="@p.PropietarioId">
+           <i class="fas fa-address-book fa-lg" aria-hidden="true"></i>Editar </a></td>
+           <td><a class="btn btn-primary table-btn" asp-page="./Privacy" asp-route-propietarioId="@p.PropietarioId">
+           <i class="fas fa-address-book fa-lg" aria-hidden="true"></i>Borrar </a></td>
+        </tr>
+
+    }
+
+
+</table>
