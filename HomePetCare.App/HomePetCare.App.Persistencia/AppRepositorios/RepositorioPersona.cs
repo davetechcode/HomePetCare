@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using HomePetCare.App.Dominio;
+using RazorPagesMascotas.Models;
 
 namespace HomePetCare.App.Persistencia
 {

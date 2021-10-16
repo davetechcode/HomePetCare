@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using System;
 using System.Linq;
-using HomePetCare.App.Dominio;
+using RazorPagesMascotas.Models;
 
 namespace HomePetCare.App.Persistencia
 {
@@ -46,14 +47,18 @@ namespace HomePetCare.App.Persistencia
 
         Propietario IRepositorioPropietario.UpdatePropietario(Propietario propietario)
         {
+             Console.WriteLine("pass object "+propietario.PropietarioId);
             var propietarioEncontrado = _appContext.Propietarios.FirstOrDefault(pr => pr.PropietarioId == propietario.PropietarioId);
+        Console.WriteLine("call method  "+propietarioEncontrado.Apellidos);
             if (propietarioEncontrado != null)
             {
-                propietarioEncontrado.MascotaId = propietario.MascotaId;
-                
-
+                 Console.WriteLine("Hello.. inside method   "+propietarioEncontrado.Apellidos);
+               propietarioEncontrado.Apellidos= propietario.Apellidos;
+               propietarioEncontrado.Identificacion = propietario.Identificacion;
+               propietarioEncontrado.Nombre = propietario.Nombre;
+               propietarioEncontrado.Direccion= propietario.Direccion;
+               propietarioEncontrado.Telefono= propietario.Telefono;
                 _appContext.SaveChanges();
-
 
             }
             return propietarioEncontrado;

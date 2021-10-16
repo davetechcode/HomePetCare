@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using HomePetCare.App.Dominio;
+using RazorPagesMascotas.Models;
 
 
 namespace HomePetCare.App.Persistencia
@@ -20,6 +20,11 @@ namespace HomePetCare.App.Persistencia
                 optionsBuilder
                 .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog =HomePetCareData");
             }
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Mascota>().ToTable(nameof(Mascotas))
+                .HasOne(m => m.Propietario);
         }
     }
 }

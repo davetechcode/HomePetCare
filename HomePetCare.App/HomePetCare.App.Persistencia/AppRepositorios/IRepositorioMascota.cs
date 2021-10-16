@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using HomePetCare.App.Dominio;
+using RazorPagesMascotas.Models;
 
 
 namespace HomePetCare.App.Persistencia

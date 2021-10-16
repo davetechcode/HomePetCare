@@ -1,6 +1,6 @@
 using System;
 
-namespace HomePetCare.App.Dominio
+namespace RazorPagesMascotas.Models
 {
     public class Visita
     {
