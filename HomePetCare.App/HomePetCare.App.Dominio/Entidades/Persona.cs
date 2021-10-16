@@ -1,4 +1,5 @@
 using System;
+
 namespace HomePetCare.App.Dominio
 {
     public class Persona
